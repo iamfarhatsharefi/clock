@@ -1,26 +1,26 @@
 import {
-    INCREMENT_BREAK,
-    DECREMENT_BREAK,
-    INCREMENT_SESSION,
-    DECREMENT_SESSION,
-    RESET,
-    PLAY_PAUSE,
-    TICK,
-  } from './actions';
-  
-  const initialState = {
-    breakCount: 5,
-    sessionCount: 25,
-    clockCount: 25 * 60,
-    currentTimer: 'Session',
-    isPlaying: false,
-    isStarted: false,
-  };
-  
-  const rootReducer = (state, action) => {
-    const currentState = state === undefined ? initialState : state;
-  
-    switch (action.type) {
+  INCREMENT_BREAK,
+  DECREMENT_BREAK,
+  INCREMENT_SESSION,
+  DECREMENT_SESSION,
+  RESET,
+  PLAY_PAUSE,
+  TICK,
+} from './actions';
+
+const initialState = {
+  breakCount: 5,
+  sessionCount: 25,
+  clockCount: 25 * 60,
+  currentTimer: 'Session',
+  isPlaying: false,
+  isStarted: false,
+};
+
+const rootReducer = (state, action) => {
+  const currentState = state === undefined ? initialState : state;
+
+  switch (action.type) {
       case INCREMENT_BREAK:
         return currentState.breakCount < 60 && !currentState.isPlaying
           ? { ...currentState, breakCount: currentState.breakCount + 1 }
