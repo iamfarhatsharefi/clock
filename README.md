@@ -9,7 +9,7 @@ This Clock Project is a dynamic and responsive digital clock application built w
 ## Demo 📸
 
 
-![Demo]()
+![Demo](./images/clockpicture.PNG)
 ![FreeCodeCamp]()
 <br>
  [Live-link]()
