@@ -10,9 +10,9 @@ This Clock Project is a dynamic and responsive digital clock application built w
 
 
 ![Demo](./images/clockpicture.PNG)
-![FreeCodeCamp]()
+![FreeCodeCamp](./images/clock%20freecodecamp.PNG)
 <br>
- [Live-link]()
+ [Live-link](https://clock-lqoqqw853-farhat-sharefis-projects.vercel.app/)
 
 
 ## Technologies Used 🛠️
